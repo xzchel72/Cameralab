@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Сравнение камер OPPO Find X8 Ultra и iPhone 16 Pro Max.">
+  <title>CameraLab — OPPO vs iPhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CameraLab — главная"><span class="brand-mark">◉</span> Camera<span>Lab</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#compare">Сравнение</a>
+      <a href="#specs">Характеристики</a>
+      <a href="#verdict">Итог</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☾ <span>Тема</span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> БИТВА КАМЕР · 2024</div>
+      <h1>Два флагмана.<br><span class="gradient-text">Один кадр.</span></h1>
+      <p class="hero-copy">Сравниваем камеры OPPO Find X8 Ultra и iPhone 16 Pro Max — от сверхшироких пейзажей до далёкого зума.</p>
+      <a class="primary-button" href="#compare">Изучить сравнение <span>↓</span></a>
+      <div class="hero-note">Независимый обзор характеристик · без рекламных обещаний</div>
+    </section>
+
+    <section class="phone-grid" aria-label="Сравниваемые смартфоны">
+      <article class="phone-card oppo-card">
+        <div class="phone-top"><span class="pill">ANDROID</span><span class="camera-symbol">◉ ◉ ◉</span></div>
+        <div class="phone-art oppo-art" aria-label="Стилизованная иллюстрация смартфона OPPO" role="img">
+          <div class="phone-frame"><div class="camera-island"><i></i><i></i><i></i><i></i></div><div class="phone-shine"></div></div>
+        </div>
+        <div class="phone-info"><p class="muted-label">OPPO</p><h2>Find X8 Ultra</h2><p class="phone-subtitle">Фокус на фото и зуме</p><a href="#oppo-specs" class="text-link">Характеристики <span>↗</span></a></div>
+      </article>
+      <div class="versus"><span>VS</span></div>
+      <article class="phone-card iphone-card">
+        <div class="phone-top"><span class="pill">iOS</span><span class="camera-symbol">◉ ◉ ◉</span></div>
+        <div class="phone-art iphone-art" aria-label="Стилизованная иллюстрация смартфона iPhone" role="img">
+          <div class="phone-frame"><div class="camera-island"><i></i><i></i><i></i></div><div class="phone-shine"></div></div>
+        </div>
+        <div class="phone-info"><p class="muted-label">APPLE</p><h2>iPhone 16 Pro Max</h2><p class="phone-subtitle">Фото и видео в одном</p><a href="#iphone-specs" class="text-link">Характеристики <span>↗</span></a></div>
+      </article>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="section-heading"><div><p class="eyebrow">01 / СРАВНЕНИЕ</p><h2>Камеры в цифрах</h2></div><p class="section-desc">Главные параметры, которые влияют на снимки и видео.</p></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Характеристика</th><th>OPPO Find X8 Ultra</th><th>iPhone 16 Pro Max</th></tr></thead>
+          <tbody>
+            <tr><td>Основная камера</td><td><strong>50 МП</strong></td><td><strong>48 МП</strong></td></tr>
+            <tr><td>Сверхширокоугольная</td><td>50 МП</td><td>48 МП</td></tr>
+            <tr><td>Телефото</td><td>50 МП, 3× оптический зум</td><td>12 МП, 5× оптический зум</td></tr>
+            <tr><td>Дополнительный зум-модуль</td><td>50 МП, 6× оптический зум</td><td>—</td></tr>
+            <tr><td>Фронтальная камера</td><td>32 МП</td><td>12 МП</td></tr>
+            <tr><td>Максимум видео</td><td>До 4K при 120 кадр/с на поддерживаемых режимах</td><td>До 4K при 120 кадр/с на поддерживаемых режимах</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine-print">Характеристики приведены для общего ориентирования. Доступные разрешения, частота кадров и функции зависят от режима съёмки и версии ПО. Количество мегапикселей само по себе не определяет качество фото.</p>
+    </section>
+
+    <section class="section feature-section" id="specs">
+      <div class="section-heading"><div><p class="eyebrow">02 / ПО СЦЕНАРИЯМ</p><h2>Кто в чём силён?</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">⌕</div><h3>Дальний зум</h3><p>У OPPO два отдельных телефото-модуля, включая 6×. У iPhone — телефото 5×. OPPO предлагает больше оптических ступеней зума.</p><span class="winner oppo-winner">Преимущество: OPPO по оптике</span></article>
+        <article class="feature-card"><div class="feature-icon">▧</div><h3>Видео</h3><p>iPhone известен сильными видеоинструментами, удобной съёмкой и интеграцией с приложениями. OPPO также поддерживает продвинутые видеорежимы.</p><span class="winner iphone-winner">Сильный выбор: iPhone</span></article>
+        <article class="feature-card"><div class="feature-icon">☼</div><h3>Портреты и люди</h3><p>Оба смартфона используют вычислительную обработку и несколько фокусных расстояний. Результат зависит от света, тона кожи и выбранного режима.</p><span class="winner neutral-winner">Нужны реальные тесты</span></article>
+        <article class="feature-card"><div class="feature-icon">✧</div><h3>Селфи</h3><p>У OPPO выше номинальное разрешение фронтальной камеры. Но детализация, HDR и оттенки кожи не сводятся к числу мегапикселей.</p><span class="winner oppo-winner">По разрешению: OPPO</span></article>
+      </div>
+    </section>
+
+    <section class="section specs-section">
+      <div class="section-heading"><div><p class="eyebrow">03 / ПОДРОБНЕЕ</p><h2>Фотосистема каждого</h2></div></div>
+      <div class="spec-columns">
+        <article class="spec-panel" id="oppo-specs"><div class="spec-title"><span class="mini-dot oppo-dot"></span><h3>OPPO Find X8 Ultra</h3></div><ul><li><span>Основная</span><b>50 МП</b></li><li><span>Сверхширокая</span><b>50 МП</b></li><li><span>Телефото 1</span><b>50 МП · 3×</b></li><li><span>Телефото 2</span><b>50 МП · 6×</b></li><li><span>Фронтальная</span><b>32 МП</b></li></ul><p class="spec-foot">Система с четырьмя задними камерами, рассчитанная на гибкость фокусных расстояний.</p></article>
+        <article class="spec-panel" id="iphone-specs"><div class="spec-title"><span class="mini-dot iphone-dot"></span><h3>iPhone 16 Pro Max</h3></div><ul><li><span>Основная</span><b>48 МП</b></li><li><span>Сверхширокая</span><b>48 МП</b></li><li><span>Телефото</span><b>12 МП · 5×</b></li><li><span>LiDAR</span><b>Есть</b></li><li><span>Фронтальная</span><b>12 МП</b></li></ul><p class="spec-foot">Сильная сторона — видеовозможности, стабилизация и интеграция с экосистемой Apple.</p></article>
+      </div>
+    </section>
+
+    <section class="verdict" id="verdict">
+      <p class="eyebrow">04 / ВЕРДИКТ</p><h2>Какой выбрать?</h2>
+      <div class="verdict-grid">
+        <div><h3>Выбирай OPPO, если…</h3><p>Тебе важны несколько телефото-камер, гибкость оптического зума и высокая номинальная детализация фронтальной камеры.</p></div>
+        <div><h3>Выбирай iPhone, если…</h3><p>Ты часто снимаешь видео, ценишь удобный рабочий процесс и пользуешься устройствами и приложениями Apple.</p></div>
+      </div>
+      <p class="disclaimer">Это сравнение характеристик, а не лабораторный тест качества. Для честного победителя нужны одинаковые сцены, освещение и настройки съёмки.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">◉</span> Camera<span>Lab</span></a><p>Сравнивай не цифры — сравнивай результат.</p><a href="#home" class="back-top">Наверх ↑</a></footer>
+</body>
+</html>
